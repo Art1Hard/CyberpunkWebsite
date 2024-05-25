@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		@@include('html/sections/intro.html',{})
+		@@include('html/sections/about.html',{})
+		<img class="line-white-to-black" src="@img/white-to-black.png" alt="">
+		@@include('html/sections/promotion.html',{})
+	</main>
+	@@include('html/footer.html',{})
+</body>
+
+<script src="js/app.min.js"></script>
+
+</html>

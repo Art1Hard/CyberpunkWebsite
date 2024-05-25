@@ -1,0 +1,46 @@
+@import "reset";
+@import "fonts";
+
+$primaryColor: #000;
+$secondColor: #fff;
+$accentColor: #F8F200;
+$spanColor: #52BEDC;
+
+$boldWeight: 700;
+$lightWeight: 300;
+
+body {
+	font-family: Archangelsk;
+	background-color: $primaryColor;
+	font-size: 18px;
+	color: white;
+}
+
+span {
+	color: $spanColor;
+	font-weight: $boldWeight;
+}
+
+h1 {
+	font-size: 62px;
+}
+
+h2 {
+	font-size: 62px;
+}
+
+.line-white-to-black {
+	height: 70px;
+	display: block;
+	object-fit: cover;
+}
+
+.content {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+@import "header";
+@import "sections/intro";
+@import "sections/about";
+@import "sections/promotion";

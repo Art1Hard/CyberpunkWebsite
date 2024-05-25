@@ -1,0 +1,49 @@
+.about {
+	color: $primaryColor;
+	background-color: $secondColor;
+
+	&__content {
+		padding: 70px 0;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__description {
+		color: #777777;
+		max-width: 952px;
+		margin-bottom: 70px;
+	}
+
+	&__pictures {
+	}
+}
+
+.pictures {
+
+	&__row {
+		display: flex;
+		column-gap: 32px;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+	}
+
+	&__item {
+		clip-path: polygon(100% 0,100% 90%,94% 100%,0 100%,0 12%,7% 0);
+		object-fit: cover;
+	}
+	&__item-column {
+		clip-path: polygon(100% 0, 100% 80%, 92% 100%, 0 100%, 0 21%, 9% 0);
+		object-fit: cover;
+	}
+}
+
+.description {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.9;
+}
