@@ -11,14 +11,19 @@
 
 		<div class="promotion__row">
 			<form action="#" method="get" class="promotion__form">
-				<input type="text" placeholder="Как тебя зовут?" name="name" class="promotion__input-text" required>
-				<input type="email" placeholder="Твой е-mail" name="email" class="promotion__input-text" required>
-				<input type="file" id="file">
-				<label for="file">Выберите файл</label>
-				<button type="submit" class="promotion__submit-btn">Отправить</button>
+				<input type="text" placeholder="Как тебя зовут?" name="name" class="promotion__input-text" tabindex="1"
+					required>
+				<input type="email" placeholder="Твой е-mail" name="email" class="promotion__input-text" tabindex="2" required>
+				<input type="file" id="file" class="promotion__file">
+				<label for="file" class="lebel" tabindex="3">
+					<p>Прикрепить скриншот</p>
+					<p>.png / .jpg / .pdf</p>
+				</label>
+				<button type="submit" class="promotion__submit-btn" tabindex="5">Отправить</button>
 				<div class="promotion__checkbox-content">
 					<input type="checkbox" class="promotion__input-checkbox" id="political" required>
-					<label for="political" class="promotion__political-label">Согласен на обработку персональных данных</label>
+					<label for="political" class="promotion__political-label" tabindex="4">Согласен на обработку персональных
+						данных</label>
 				</div>
 			</form>
 
