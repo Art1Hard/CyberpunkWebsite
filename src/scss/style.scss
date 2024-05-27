@@ -9,6 +9,9 @@ $spanColor: #52BEDC;
 $boldWeight: 700;
 $lightWeight: 300;
 
+$archangelskFamily: Archangelsk;
+$robotoFamily: "Roboto", sans-serif;
+
 body {
 	font-family: Archangelsk;
 	background-color: $primaryColor;
@@ -29,6 +32,10 @@ h2 {
 	font-size: 62px;
 }
 
+h3 {
+	font-size: 24px;
+}
+
 .line-white-to-black {
 	height: 70px;
 	display: block;
@@ -45,3 +52,5 @@ h2 {
 @import "sections/about";
 @import "sections/promotion";
 @import "sections/computer";
+@import "sections/buy";
+@import "footer";

@@ -1,0 +1,102 @@
+.computer {
+	background-color: $accentColor;
+	color: $primaryColor;
+
+	&__content {
+		padding: 70px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	&__section-one {
+		flex: 50%;
+		margin-right: 30px;
+	}
+
+	&__monitor {
+		margin-bottom: 25px;
+	}
+
+	&__content-logo {
+		display: flex;
+		column-gap: 25px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__hp-icon {
+		fill: $primaryColor;
+		width: 80px;
+		height: 80px;
+	}
+
+	&__sticks-icon {
+		stroke: $primaryColor;
+		width: 90px;
+		height: 20px;
+	}
+
+	&__cp-icon {
+		width: 320px;
+		height: 80px;
+	}
+
+	&__section-two {
+		flex: 50%;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__description {
+		margin-bottom: 25px;
+	}
+
+	&__advantage {
+		font-family: $robotoFamily;
+		margin-bottom: 40px;
+	}
+
+	&__advantage-item {
+		margin-bottom: 15px;
+		position: relative;
+		padding: 6px 0 6px 40px;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&::before {
+			content: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_943_640)'%3E%3Cpath d='M16 4C9.37333 4 4 9.37333 4 16C4 22.6267 9.37333 28 16 28C17.1067 28 18 27.1067 18 26C18 25.48 17.8 25.0133 17.48 24.6533C17.1733 24.3067 16.9733 23.84 16.9733 23.3333C16.9733 22.2267 17.8667 21.3333 18.9733 21.3333H21.3333C25.0133 21.3333 28 18.3467 28 14.6667C28 8.77333 22.6267 4 16 4ZM8.66667 16C7.56 16 6.66667 15.1067 6.66667 14C6.66667 12.8933 7.56 12 8.66667 12C9.77333 12 10.6667 12.8933 10.6667 14C10.6667 15.1067 9.77333 16 8.66667 16ZM12.6667 10.6667C11.56 10.6667 10.6667 9.77333 10.6667 8.66667C10.6667 7.56 11.56 6.66667 12.6667 6.66667C13.7733 6.66667 14.6667 7.56 14.6667 8.66667C14.6667 9.77333 13.7733 10.6667 12.6667 10.6667ZM19.3333 10.6667C18.2267 10.6667 17.3333 9.77333 17.3333 8.66667C17.3333 7.56 18.2267 6.66667 19.3333 6.66667C20.44 6.66667 21.3333 7.56 21.3333 8.66667C21.3333 9.77333 20.44 10.6667 19.3333 10.6667ZM23.3333 16C22.2267 16 21.3333 15.1067 21.3333 14C21.3333 12.8933 22.2267 12 23.3333 12C24.44 12 25.3333 12.8933 25.3333 14C25.3333 15.1067 24.44 16 23.3333 16Z' fill='black' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_943_640'%3E%3Crect width='32' height='32' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			height: 32px;
+			width: 32px;
+		}
+	}
+
+	.__sparkle {
+		&::before {
+			content: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_943_645)'%3E%3Cpath d='M25.3333 11.9999L26.9999 8.33325L30.6666 6.66658L26.9999 4.99992L25.3333 1.33325L23.6666 4.99992L19.9999 6.66658L23.6666 8.33325L25.3333 11.9999ZM15.3333 12.6666L11.9999 5.33325L8.66658 12.6666L1.33325 15.9999L8.66658 19.3333L11.9999 26.6666L15.3333 19.3333L22.6666 15.9999L15.3333 12.6666ZM25.3333 19.9999L23.6666 23.6666L19.9999 25.3333L23.6666 26.9999L25.3333 30.6666L26.9999 26.9999L30.6666 25.3333L26.9999 23.6666L25.3333 19.9999Z' fill='black' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_943_645'%3E%3Crect width='32' height='32' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+		}
+	}
+
+	.__files {
+		&::before {
+			content: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_943_650)'%3E%3Cpath d='M18.6667 2.66663H5.33341C3.85341 2.66663 2.66675 3.86663 2.66675 5.33329V18.6666H5.33341V5.33329H18.6667V2.66663ZM24.0001 7.99996H10.6667C9.18675 7.99996 8.00008 9.19996 8.00008 10.6666V24H10.6667V10.6666H24.0001V7.99996ZM26.6667 13.3333H16.0001C14.5201 13.3333 13.3334 14.5333 13.3334 16V26.6666C13.3334 28.1333 14.5201 29.3333 16.0001 29.3333H26.6667C28.1334 29.3333 29.3334 28.1333 29.3334 26.6666V16C29.3334 14.5333 28.1334 13.3333 26.6667 13.3333Z' fill='black' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_943_650'%3E%3Crect width='32' height='32' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+		}
+	}
+
+	&__more-btn {
+		display: inline-block;
+		background-color: $primaryColor;
+		padding: 15px 50px;
+		font-weight: $boldWeight;
+		font-family: $robotoFamily;
+		color: $accentColor;
+	}
+}
