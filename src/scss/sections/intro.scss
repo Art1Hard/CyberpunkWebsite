@@ -1,12 +1,22 @@
 .intro {
 	background-color: $secondColor;
-	background-image: url("../img/intro-slides/slide-one.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 1000px;
+	position: relative;
+
 	&__content {
 		position: relative;
+		height: 100%;
+		z-index: 99;
+	}
+
+	&__card-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
 		width: 100%;
 		height: 100%;
 	}
@@ -15,7 +25,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		z-index: 1;
+		z-index: 100;
 		padding: 70px;
 		background-color: $accentColor;
 		clip-path: polygon(100% 0,100% 85%,90% 100%,0 100%,0 15%,10% 0);
@@ -36,5 +46,20 @@
 		padding: 20px 50px;
 		background-color: $primaryColor;
 		color: $accentColor;
+	}
+}
+
+.swiper {
+	position: relative;
+	z-index: 1;
+  width: 100%;
+  height: 100%;
+	margin-bottom: 100px;
+}
+
+.swiper-slide {
+	object-fit: cover;
+	img {
+		height: 100%;
 	}
 }
